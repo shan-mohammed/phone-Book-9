@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="./links/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="phonebook-box">
+        <h1 class="text-center text-success py-4 fst-italic fw-semibold">
+          Phonebook Application
+        </h1>
+        <form id="contactForm" class="w-100">
+          <div class="d-grid g-3 p-3 justify-content-center w-100">
+            <input type="hidden" id="contactId" />
+
+            <!-- Name -->
+            <div class="mb-4">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter phone number"
+              />
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary flex-fill">
+                Add Contact
+              </button>
+
+              <button type="button" class="btn btn-secondary flex-fill" id="cancelBtn">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add and update contacts -->
+
+    <!-- search -->
+    <div
+      class="container d-flex flex-column justify-content-center  mt-5 py-5 align-items-center"
+    >
+      <div class="col-12 col-md-6 mb-5">
+        <input
+          type="text"
+          class="form-control"
+          id="searchInput"
+          placeholder="Search by name or phone Number"
+        />
+      </div>
+      <div>
+        <ul id="contactList"></ul>
+      </div>
+    </div>
+
+    <script src="./links/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

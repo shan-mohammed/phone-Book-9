@@ -1,0 +1,64 @@
+body {
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.phonebook-box {
+  width: 100%;
+  max-width: 700px;   /* controls size on large screens */
+  padding: 60px;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: #f8f8f8;
+}
+
+.form-control {
+  width: 100%;        /* full width */
+  height: 55px;
+  border: 3px solid black;
+  font-size: 1.1rem;
+}
+
+.btn {
+  width: 150px;
+  font-size: 1.1rem;
+}
+ul {
+  list-style: none; /* Removes the bullet points */
+  padding: 0;       /* Removes default browser indentation */
+  margin: 0;        /* Removes default top/bottom spacing */
+}
+#contactList li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* keeps everything in one row */
+  padding: 15px;
+  border: 1px solid #140a0a;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 576px) {
+  .phonebook-box {
+    padding: 30px;
+    border-radius: 40px;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
